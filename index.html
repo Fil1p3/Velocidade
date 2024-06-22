@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Velocidade Média</title>
+</head>
+<body>
+    <h1>Calculadora de Velocidade Média</h1>
+    <form id="velocidade">
+        <label for="modelo">Modelo do teu veículo:</label><br>
+        <input type="text" id="modelo" name="modelo" required><br><br>
+
+        <label for="distancia">Distância percorrida (em km):</label><br>
+        <input type="number" id="distancia" name="distancia" required><br><br>
+
+        <label for="tempo">Tempo gasto (em horas):</label><br>
+        <input type="number" id="tempo" name="tempo" required><br><br>
+
+        <button type="submit">Calcular Velocidade Média</button>
+    </form>
+
+    <div id="resultado" 
+    style="display: none;">
+        <h2>Resultado:</h2>
+        <p><strong>Modelo do veículo:</strong> <span id="modeloResultado"></span></p>
+        <p><strong>Distância percorrida:</strong> <span id="distanciaResultado"></span> km</p>
+        <p><strong>Tempo gasto:</strong> <span id="tempoResultado"></span> horas</p>
+        <p><strong>Velocidade média:</strong> <span id="velocidadeMedia"></span> km/h</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
